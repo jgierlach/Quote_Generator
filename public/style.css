@@ -1,5 +1,7 @@
+/* primary font and font color throughout app */
 body {
   font-family: sans-serif;
+  background: #5a786f;
 }
 
 a {
@@ -10,12 +12,22 @@ label {
   display: block;
 }
 
-nav a {
+/* nav a {
   display: inline-block;
   margin: 1em;
-}
+} */
 
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+/* color of the navbackground */
+.nav-color {
+  background: #6f60c8;
+}
+
+/* primary color of the text throughout the application */
+.primary-text-color {
+  color: #ace4f8;
 }

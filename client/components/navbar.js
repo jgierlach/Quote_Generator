@@ -1,30 +1,106 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import {logout} from '../store'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div>
-    <h1 className="teal lighten-2 class">BOILERMAKER</h1>
-    <nav>
+    <nav className="nav-color">
       {isLoggedIn ? (
-        <div>
+        <div className="nav-wrapper primary-text-color">
           {/* The navbar will show these links after you log in */}
-          <Link to="/home">Home</Link>
-          <a href="#" onClick={handleClick}>
-            Logout
-          </a>
+          {/* Beginning of desktop navbar */}
+            {/* Hamburger navbar icon */}
+            <a className="sidenav-trigger primary-text-color" href="#" data-target="mobile-links">
+              <i className="material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile" className="right hide-on-med-and-down primary-text-color">
+              <li>
+               {/* Link to home component */}  
+                <NavLink className="primary-text-color" to='/home'
+                  activeStyle={{
+                    color: '#EF4907'
+                   }}>Home
+                </NavLink>
+              </li> 
+              <li>
+               {/* Link to logout of app */}  
+                <a href="#" className="primary-text-color" onClick={handleClick}
+                  activeStyle={{
+                    color: '#EF4907'
+                   }}>Logout
+                </a> 
+              </li>
+            </ul>
+            {/* End of desktop navbar beginning of mobile navbar*/}
+            <ul id="mobile-links" className="sidenav">
+              <li>
+                {/* Mobile Link to home component */}
+                <NavLink className="primary-text-color" to='/home'
+                  activeStyle={{
+                    color: '#EF4907'
+                   }}>Home
+                </NavLink>
+              </li>
+              <li>
+                <a href="#" className="primary-text-color" onClick={handleClick} 
+                  activeStyle={{
+                    color: '#EF4907'
+                   }}>Logout
+                </a>
+              </li> 
+            </ul>
         </div>
       ) : (
-        <div>
+        <div className="nav-wrapper primary-text-color">
           {/* The navbar will show these links before you log in */}
-          <Link to="/login">Login</Link>
-          <Link to="/signup">Sign Up</Link>
+          {/* The navbar will show these links after you log in */}
+          {/* Beginning of desktop navbar */}
+            {/* Hamburger navbar icon */}
+            <a className="sidenav-trigger primary-text-color" href="#" data-target="mobile-links">
+              <i className="material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile" className="right hide-on-med-and-down">
+              <li>
+               {/* Link to login component */}  
+                <NavLink className="primary-text-color" to='/login'
+                  activeStyle={{
+                    color: '#EF4907'
+                   }}>Login
+                </NavLink>
+              </li> 
+              <li>
+              {/* Link to sign up component */}
+              <NavLink className="primary-text-color" to='/signup'
+                  activeStyle={{
+                    color: '#EF4907'
+                   }}>Sign Up
+                </NavLink>  
+              </li>
+            </ul>
+            {/* End of desktop navbar beginning of mobile navbar*/}
+            <ul id="mobile-links" className="sidenav">
+              <li>
+                {/* Link to login component */}  
+                <NavLink className="primary-text-color" to='/login'
+                  activeStyle={{
+                    color: '#EF4907'
+                   }}>Login
+                </NavLink>
+              </li>
+              <li>
+              <NavLink className="primary-text-color" to='/signup'
+                  activeStyle={{
+                    color: '#EF4907'
+                   }}>Sign Up
+              </NavLink> 
+              </li> 
+            </ul>
         </div>
       )}
     </nav>
-    <hr />
+    {/* <hr /> */}
   </div>
 )
 
