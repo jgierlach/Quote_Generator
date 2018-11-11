@@ -1,7 +1,7 @@
 /* primary font and font color throughout app */
 body {
   font-family: sans-serif;
-  background: #5a786f;
+  background: #8bf0c5;
 }
 
 a {
@@ -12,11 +12,6 @@ label {
   display: block;
 }
 
-/* nav a {
-  display: inline-block;
-  margin: 1em;
-} */
-
 form div {
   margin: 1em;
   display: inline-block;
@@ -24,10 +19,48 @@ form div {
 
 /* color of the navbackground */
 .nav-color {
-  background: #6f60c8;
+  background: #31eca7;
 }
 
 /* primary color of the text throughout the application */
 .primary-text-color {
-  color: #ace4f8;
+  color: #147444;
 }
+
+/* color of buttons that generate quotes */
+.button-color {
+  background: #7872ac;
+}
+
+/* top margin to move the text on the home page down */
+.top-margin {
+  margin-top: 1.5em;
+}
+
+/* css for the footer component */
+.page-footer {
+  position:fixed;
+  bottom:0;
+  width: 100%;
+}
+
+/* background color of where the quote will be displayed */
+.quote-display-background {
+  background: #252f2d;
+}
+
+/* color of quote text */
+.quote-text-color {
+  color: white;
+}
+
+/* size of quote box */
+.quote-box-margin {
+  padding: 1.5em;
+}
+
+/* shape of quote box */
+.quote-box-shape {
+  border-radius: 35px;
+}
+

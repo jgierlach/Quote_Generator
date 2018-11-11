@@ -19,15 +19,23 @@ const Navbar = ({handleClick, isLoggedIn}) => (
               <li>
                {/* Link to home component */}  
                 <NavLink className="primary-text-color" to='/home'
-                  activeStyle={{
+                  activestyle={{
                     color: '#EF4907'
                    }}>Home
+                </NavLink>
+              </li>
+              <li>
+               {/* Link to contact component */}  
+                <NavLink className="primary-text-color" to='/contacts'
+                  activestyle={{
+                    color: '#EF4907'
+                   }}>Contact
                 </NavLink>
               </li> 
               <li>
                {/* Link to logout of app */}  
                 <a href="#" className="primary-text-color" onClick={handleClick}
-                  activeStyle={{
+                  activestyle={{
                     color: '#EF4907'
                    }}>Logout
                 </a> 
@@ -38,14 +46,14 @@ const Navbar = ({handleClick, isLoggedIn}) => (
               <li>
                 {/* Mobile Link to home component */}
                 <NavLink className="primary-text-color" to='/home'
-                  activeStyle={{
+                  activestyle={{
                     color: '#EF4907'
                    }}>Home
                 </NavLink>
               </li>
               <li>
                 <a href="#" className="primary-text-color" onClick={handleClick} 
-                  activeStyle={{
+                  activestyle={{
                     color: '#EF4907'
                    }}>Logout
                 </a>
@@ -62,10 +70,18 @@ const Navbar = ({handleClick, isLoggedIn}) => (
               <i className="material-icons">menu</i>
             </a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
+             <li>
+               {/* Link to home component */}  
+                <NavLink className="primary-text-color" to='/home'
+                  activestyle={{
+                    color: '#EF4907'
+                   }}>Home
+                </NavLink>
+              </li> 
               <li>
                {/* Link to login component */}  
                 <NavLink className="primary-text-color" to='/login'
-                  activeStyle={{
+                  activestyle={{
                     color: '#EF4907'
                    }}>Login
                 </NavLink>
@@ -73,7 +89,7 @@ const Navbar = ({handleClick, isLoggedIn}) => (
               <li>
               {/* Link to sign up component */}
               <NavLink className="primary-text-color" to='/signup'
-                  activeStyle={{
+                  activestyle={{
                     color: '#EF4907'
                    }}>Sign Up
                 </NavLink>  
@@ -84,14 +100,14 @@ const Navbar = ({handleClick, isLoggedIn}) => (
               <li>
                 {/* Link to login component */}  
                 <NavLink className="primary-text-color" to='/login'
-                  activeStyle={{
+                  activestyle={{
                     color: '#EF4907'
                    }}>Login
                 </NavLink>
               </li>
               <li>
               <NavLink className="primary-text-color" to='/signup'
-                  activeStyle={{
+                  activestyle={{
                     color: '#EF4907'
                    }}>Sign Up
               </NavLink> 
