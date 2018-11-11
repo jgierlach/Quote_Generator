@@ -7,7 +7,7 @@ const DefaultHome = () => {
       <div className="row center top-margin">
         <div className="col s12 center">
           <h2 className="primary-text-color">
-            Generate Quote Below
+            Generate Quote Below!
          </h2>
        </div>
       </div>
@@ -29,7 +29,7 @@ const DefaultHome = () => {
         {/* </div> */}
         {/* <div className="col s6"> */}
           <Link to="contacts">
-            <button type="submit" className="btn button-color">Choose which friends to    send too
+            <button type="submit" className="btn button-color">Choose which friends to send too
             </button>
           </Link>
         {/* </div> */}
